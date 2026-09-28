@@ -43,13 +43,13 @@ codi = {
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ItsMeCodyy&show_icons=true&hide_border=true&theme=transparent)
+<img src="https://github-readme-stats.vercel.app/api?username=ItsMeCodyy&show_icons=true&hide_border=true&theme=transparent" height="150" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ItsMeCodyy&layout=compact&hide_border=true&theme=transparent)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsMeCodyy&layout=compact&hide_border=true&theme=transparent" height="150" />
 
-<br>
+<br><br>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=ItsMeCodyy&theme=transparent&hide_border=true)
+<img src="https://streak-stats.demolab.com?user=ItsMeCodyy&theme=transparent&hide_border=true" />
 
 </div>
 

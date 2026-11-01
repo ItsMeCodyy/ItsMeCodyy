@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NOIR Audio — clean, private browser-based audio tools." />
+  <title>NOIR Audio — Free Audio Tools</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="nav">
+    <a class="brand" href="#">
+      <span class="brand-mark">N</span>
+      <span>NOIR AUDIO</span>
+    </a>
+    <div class="nav-right">
+      <span class="privacy-pill"><span class="dot"></span> PRIVATE · IN BROWSER</span>
+      <a href="#tools">TOOLS</a>
+      <a href="#about">ABOUT</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">AUDIO, WITHOUT THE CLUTTER.</p>
+      <h1>Shape sound.<br><span>Keep it simple.</span></h1>
+      <p class="hero-copy">A focused set of audio tools that run locally in your browser. No uploads to a server. No account. No noise.</p>
+      <a class="primary-btn" href="#workspace">START EDITING <span>↘</span></a>
+
+      <div class="wave-art" aria-hidden="true">
+        <div class="wave-line"></div>
+      </div>
+    </section>
+
+    <section class="tools-section" id="tools">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">01 / TOOLKIT</p>
+          <h2>Choose a tool</h2>
+        </div>
+        <p>Pick an effect, drop in a track, adjust it, export it.</p>
+      </div>
+
+      <div class="tool-grid" id="toolGrid">
+        <button class="tool-card active" data-tool="8d">
+          <span class="tool-index">01</span>
+          <div class="tool-icon orbit">◌</div>
+          <h3>8D Audio</h3>
+          <p>Move sound around the stereo field with a smooth rotating pan.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="bass">
+          <span class="tool-index">02</span>
+          <div class="tool-icon">≋</div>
+          <h3>Bass Booster</h3>
+          <p>Add weight and depth with a low-shelf bass boost.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="vocals">
+          <span class="tool-index">03</span>
+          <div class="tool-icon">◎</div>
+          <h3>Vocal Remover</h3>
+          <p>Reduce centered vocals using stereo phase cancellation.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="reverb">
+          <span class="tool-index">04</span>
+          <div class="tool-icon">∿</div>
+          <h3>Reverb</h3>
+          <p>Add space and atmosphere with a generated room impulse.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="echo">
+          <span class="tool-index">05</span>
+          <div class="tool-icon">···</div>
+          <h3>Echo / Delay</h3>
+          <p>Create rhythmic repeats with adjustable time and feedback.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="speed">
+          <span class="tool-index">06</span>
+          <div class="tool-icon">»</div>
+          <h3>Speed Changer</h3>
+          <p>Speed up or slow down audio from 0.5× to 2×.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="reverse">
+          <span class="tool-index">07</span>
+          <div class="tool-icon">↤</div>
+          <h3>Reverse Audio</h3>
+          <p>Flip the waveform and play the entire track backward.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="normalize">
+          <span class="tool-index">08</span>
+          <div class="tool-icon">↕</div>
+          <h3>Normalize</h3>
+          <p>Raise or lower peak level cleanly without clipping.</p>
+          <span class="arrow">↗</span>
+        </button>
+        <button class="tool-card" data-tool="fade">
+          <span class="tool-index">09</span>
+          <div class="tool-icon">◢</div>
+          <h3>Fade In / Out</h3>
+          <p>Add smooth starts and endings with adjustable fade length.</p>
+          <span class="arrow">↗</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="workspace" id="workspace">
+      <div class="workspace-top">
+        <div>
+          <p class="eyebrow">02 / WORKSPACE</p>
+          <h2 id="workspaceTitle">8D Audio</h2>
+        </div>
+        <span class="status" id="statusText">WAITING FOR AUDIO</span>
+      </div>
+
+      <div class="editor-shell">
+        <label class="dropzone" id="dropzone">
+          <input id="fileInput" type="file" accept="audio/*" hidden />
+          <div class="drop-icon">＋</div>
+          <div>
+            <strong>Drop an audio file here</strong>
+            <span>or click to browse · MP3, WAV, M4A, OGG and more</span>
+          </div>
+          <span class="browse">BROWSE</span>
+        </label>
+
+        <div class="file-panel hidden" id="filePanel">
+          <div class="file-meta">
+            <div class="file-badge">♪</div>
+            <div>
+              <strong id="fileName">track.mp3</strong>
+              <span id="fileDetails">00:00 · 0 MB</span>
+            </div>
+          </div>
+          <button class="ghost-btn" id="replaceBtn">REPLACE</button>
+        </div>
+
+        <div class="waveform-wrap hidden" id="waveformWrap">
+          <canvas id="waveform" height="170"></canvas>
+          <div class="time-row">
+            <span id="currentTime">00:00</span>
+            <span id="duration">00:00</span>
+          </div>
+          <div class="transport">
+            <button id="playBtn" class="play-btn">▶</button>
+            <div class="transport-info">
+              <strong>PREVIEW</strong>
+              <span id="previewMode">Original audio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls hidden" id="controls"></div>
+
+        <div class="action-row hidden" id="actionRow">
+          <button class="process-btn" id="processBtn"><span>PROCESS AUDIO</span><span>↗</span></button>
+          <button class="download-btn hidden" id="downloadBtn"><span>DOWNLOAD WAV</span><span>↓</span></button>
+        </div>
+
+        <div class="progress-wrap hidden" id="progressWrap">
+          <div class="progress-label"><span>PROCESSING LOCALLY</span><span id="progressText">0%</span></div>
+          <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">03 / PRIVACY</p>
+        <h2>Your audio stays<br>on your device.</h2>
+      </div>
+      <div class="about-copy">
+        <p>NOIR Audio processes files with the Web Audio API directly in your browser. Your tracks are not sent to a server.</p>
+        <div class="about-stats">
+          <div><strong>0</strong><span>accounts</span></div>
+          <div><strong>0</strong><span>uploads</span></div>
+          <div><strong>100%</strong><span>local processing</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand">
+      <span class="brand-mark">N</span>
+      <span>NOIR AUDIO</span>
+    </div>
+    <p>Browser-based audio utilities.</p>
+    <span>© 2026</span>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

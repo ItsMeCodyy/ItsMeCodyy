@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "functions": {
+    "api/tmdb.js": {
+      "maxDuration": 10
+    }
+  }
+}

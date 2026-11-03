@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 hey, i'm nylon
+# 👋 hey, i'm nylo
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=Software+Engineer;Python+%E2%80%A2+JavaScript+%E2%80%A2+Lua;I+build+things+because+why+not." alt="Typing SVG" />
 

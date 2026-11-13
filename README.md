@@ -1,66 +1,26 @@
-<div align="center">
+# hey, i'm nylo 👋
 
-# 👋 hey, i'm nylo
+i'm a software developer who enjoys turning random ideas into real projects. i mostly work with backend systems, web development, automation, and game development.
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1000&color=FFFFFF&center=true&vCenter=true&width=500&lines=Software+Engineer;Python+%E2%80%A2+JavaScript+%E2%80%A2+Lua;I+build+things+because+why+not." alt="Typing SVG" />
+i like experimenting with new technologies, figuring out how things work, and building stuff that's actually useful. sometimes it's a full project, sometimes it's just an idea i wanted to try i also really like to work if i dont find myself something to do im just gonna sit down and be bored all day lol.
 
-<br>
-
-<sub>building useful things, weird experiments, and occasionally breaking them.</sub>
-
-</div>
-
----
-
-### about
-
-```txt
-> software engineer
-> interested in backend, APIs, automation & interactive systems
-> currently building whatever sounds fun
-```
-
-### stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=python,js,ts,lua,html,css,react,nodejs,fastapi,git,github,vscode&perline=12" />
-
-</div>
+my main coding languages are python, javascript, typescript, lua, html and css.
 
 ### currently
 
-```python
-codi = {
-    "building": "cool stuff",
-    "learning": ["backend systems", "APIs", "automation"],
-    "languages": ["Python", "JavaScript", "TypeScript", "Lua"],
-    "status": "probably coding"
-}
-```
+working on personal projects, exploring new ideas, and improving my skills one project at a time.
 
-### activity
+### let's connect
 
-<div align="center">
+<a href="https://www.linkedin.com/in/nylo-refined-73352243b/">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="mailto:codi.isme@gmail.com">
+  <img src="https://img.shields.io/badge/Email-333333?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+</a>
 
-<img src="https://github-readme-stats.vercel.app/api?username=ItsMeCodyy&show_icons=true&hide_border=true&theme=transparent" height="150" />
+<br>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItsMeCodyy&layout=compact&hide_border=true&theme=transparent" height="150" />
+---
 
-<br><br>
-
-<img src="https://streak-stats.demolab.com?user=ItsMeCodyy&theme=transparent&hide_border=true" />
-
-</div>
-
-### contributions
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ItsMeCodyy/ItsMeCodyy/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ItsMeCodyy/ItsMeCodyy/output/github-contribution-grid-snake.svg">
-  <img alt="GitHub contribution snake" src="https://raw.githubusercontent.com/ItsMeCodyy/ItsMeCodyy/output/github-contribution-grid-snake.svg">
-</picture>
-
-</div>
+<sub>building things because why not.</sub>
